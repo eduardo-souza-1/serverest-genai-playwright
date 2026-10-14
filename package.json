@@ -1,0 +1,1 @@
+{"name":"serverest-genai-playwright","version":"1.0.0","private":true,"description":"Automação REST ServeRest com GenAI, Playwright e TypeScript","scripts":{"test":"playwright test","typecheck":"tsc --noEmit","report":"playwright show-report"},"devDependencies":{"@playwright/test":"^1.56.0","typescript":"^5.9.0","@types/node":"^24.0.0"}}

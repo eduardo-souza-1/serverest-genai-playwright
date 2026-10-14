@@ -1,0 +1,1028 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "<PROJECT>\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "<PROJECT>\\playwright.config.ts",
+    "rootDir": "<PROJECT>/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "<PROJECT>/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "<PROJECT>/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "<PROJECT>\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "<PROJECT>\\tests",
+        "snapshotDir": "<PROJECT>\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "https://compassuol.serverest.dev/",
+          "extraHTTPHeaders": {
+            "Accept": "application/json"
+          },
+          "trace": "off"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.spec.ts",
+      "file": "auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "AUTH-01 positivo: login e uso do token",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7886,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:18:59.834Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJLNEEwOG1HdUxVZzJoSE5UIl0sInByb2R1Y3RzIjpbInlOSDRpanpmbEd5YzNLWUkiXSwiZmFpbHVyZXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-1540c5bf8e7a032173a4",
+          "file": "auth.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "AUTH-02 negativo: senha incorreta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7649,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:19:07.756Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyIwVHJheVZoZWFyQTZrcjFCIl0sInByb2R1Y3RzIjpbXSwiZmFpbHVyZXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-9d48d55f9a93d116abe2",
+          "file": "auth.spec.ts",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "AUTH-03 limite: senha vazia",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7026,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:19:15.420Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJvQVFzcGJydnphMjRPTHp2Il0sInByb2R1Y3RzIjpbXSwiZmFpbHVyZXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-fe21c508af490a0d4f98",
+          "file": "auth.spec.ts",
+          "line": 16,
+          "column": 5
+        },
+        {
+          "title": "AUTH-04 negativo: token ausente",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5548,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:19:22.460Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-422c014f9473efb04295",
+          "file": "auth.spec.ts",
+          "line": 23,
+          "column": 7
+        },
+        {
+          "title": "AUTH-05 negativo: token inválido",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5504,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:19:28.018Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-1d3c9fd5033b516e23ab",
+          "file": "auth.spec.ts",
+          "line": 23,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "cart.spec.ts",
+      "file": "cart.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CRT-01 positivo: criar, consultar e cancelar restaura estoque",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10835,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:19:33.550Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJ0VnRjb29zWjRROUl3SnhpIiwibVNtVGhKVHFXTkg5Q21NUyJdLCJwcm9kdWN0cyI6WyJiV0ZONzZPa2FtU1RLQmlRIl0sImZhaWx1cmVzIjpbXX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1981448f0b79506fb670-955c4b260c297adf9067",
+          "file": "cart.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "CRT-02 negativo: segundo carrinho não altera estoque",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10868,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:19:44.399Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJkcDhrMmxJelJLWFhmM0NrIiwiUzJTczBoZnUwOFRFdURhZyJdLCJwcm9kdWN0cyI6WyJqVmtqY09ZOXBJVmZJNFV0Il0sImZhaWx1cmVzIjpbXX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1981448f0b79506fb670-707c8b32deb76f020466",
+          "file": "cart.spec.ts",
+          "line": 20,
+          "column": 5
+        },
+        {
+          "title": "CRT-03 negativo: estoque insuficiente não cria carrinho",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9637,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:19:55.283Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJGNHJDN25KY1BlQnJmQXhiIiwidHY5eHlRN3pVaFdrOWo2RSJdLCJwcm9kdWN0cyI6WyJTZmtPY05EVDF6WWxjMEdDIl0sImZhaWx1cmVzIjpbXX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1981448f0b79506fb670-ea221a7049f00d2929c4",
+          "file": "cart.spec.ts",
+          "line": 29,
+          "column": 5
+        },
+        {
+          "title": "CRT-04 limite: quantidade zero é rejeitada",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9158,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"produtos[0].quantidade\"\u001b[39m\nReceived path: \u001b[31m\"produtos.0\"\u001b[39m\n\nReceived value: \u001b[31m\"p\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"produtos[0].quantidade\"\u001b[39m\nReceived path: \u001b[31m\"produtos.0\"\u001b[39m\n\nReceived value: \u001b[31m\"p\"\u001b[39m\n    at <PROJECT>\\tests\\cart.spec.ts:43:16",
+                    "location": {
+                      "file": "<PROJECT>\\tests\\cart.spec.ts",
+                      "column": 16,
+                      "line": 43
+                    },
+                    "snippet": "  41 |   const product = await resources.product(admin, 1);\n  42 |   const body = await json(await request.post('carrinhos', { headers: auth(buyer.token), data: { produtos: [{ idProduto: product._id, quantidade: 0 }] } }), 400);\n> 43 |   expect(body).toHaveProperty('produtos[0].quantidade');\n     |                ^\n  44 |   expect((await json(await request.get(`produtos/${product._id}`), 200)).quantidade).toBe(1);\n  45 | });\n  46 | test('CRT-05 limite: comprar estoque exato e concluir mantém saldo zero', async ({ request, resources }) => {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "<PROJECT>\\tests\\cart.spec.ts",
+                        "column": 16,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"produtos[0].quantidade\"\u001b[39m\nReceived path: \u001b[31m\"produtos.0\"\u001b[39m\n\nReceived value: \u001b[31m\"p\"\u001b[39m\n\n  41 |   const product = await resources.product(admin, 1);\n  42 |   const body = await json(await request.post('carrinhos', { headers: auth(buyer.token), data: { produtos: [{ idProduto: product._id, quantidade: 0 }] } }), 400);\n> 43 |   expect(body).toHaveProperty('produtos[0].quantidade');\n     |                ^\n  44 |   expect((await json(await request.get(`produtos/${product._id}`), 200)).quantidade).toBe(1);\n  45 | });\n  46 | test('CRT-05 limite: comprar estoque exato e concluir mantém saldo zero', async ({ request, resources }) => {\n    at <PROJECT>\\tests\\cart.spec.ts:43:16"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:20:04.935Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJ0VEFMOHBKaTVGS2pDUWNEIiwidXhDdFBpVEhmbEJlZWo5MCJdLCJwcm9kdWN0cyI6WyI0V1hvS01XYTZJQ0NwcFVGIl0sImZhaWx1cmVzIjpbXX0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "<PROJECT>\\test-results\\cart-CRT-04-limite-quantidade-zero-é-rejeitada\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "<PROJECT>\\tests\\cart.spec.ts",
+                    "column": 16,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1981448f0b79506fb670-cc7e68c0b23e5b45d587",
+          "file": "cart.spec.ts",
+          "line": 38,
+          "column": 5
+        },
+        {
+          "title": "CRT-05 limite: comprar estoque exato e concluir mantém saldo zero",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10303,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:20:14.661Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJFR0NRZ2NDbzVCbDJLYllLIiwibmltVVZkeEZMZjlad1hSYiJdLCJwcm9kdWN0cyI6WyJzMzd6UkxxU0pLWVI1Y2R1Il0sImZhaWx1cmVzIjpbXX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1981448f0b79506fb670-198b4dceb758207bec7c",
+          "file": "cart.spec.ts",
+          "line": 46,
+          "column": 5
+        },
+        {
+          "title": "CRT-06 negativo: produto repetido no mesmo carrinho",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10621,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:20:25.007Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJGOUNTRHc3MnpxYTJLazFXIiwiaW5OeVlvWlZ6VVloVkJFRCJdLCJwcm9kdWN0cyI6WyJ0T2RNR3Fha3NLUDJ6THV2Il0sImZhaWx1cmVzIjpbXX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1981448f0b79506fb670-0178d5fbf74d61046fc6",
+          "file": "cart.spec.ts",
+          "line": 56,
+          "column": 5
+        },
+        {
+          "title": "CRT-07 negativo: sem token não cria carrinho",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8043,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:20:35.639Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJKVnhqbXY4RENkMXV2SFhVIl0sInByb2R1Y3RzIjpbImJUV0lnbHhrUTVQQVgzMHciXSwiZmFpbHVyZXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1981448f0b79506fb670-a61ab5dd11c830426e06",
+          "file": "cart.spec.ts",
+          "line": 65,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "products.spec.ts",
+      "file": "products.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PRD-01 positivo: criar, listar, atualizar e excluir",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8741,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:20:43.701Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJScjlUZ2ZjREFmZVA0eEdJIl0sInByb2R1Y3RzIjpbIkZkRk9QNzNVa0oxTnc0NGkiXSwiZmFpbHVyZXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "000c94276132c4f97581-a624e42374cb05f10a67",
+          "file": "products.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "PRD-02 negativo: usuário comum não cria produto",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7008,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:20:52.453Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJhbWFNWjhtTUNTOUNzWHIwIl0sInByb2R1Y3RzIjpbXSwiZmFpbHVyZXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "000c94276132c4f97581-f11eced5f751fa08c6ce",
+          "file": "products.spec.ts",
+          "line": 17,
+          "column": 5
+        },
+        {
+          "title": "PRD-03 negativo: nome duplicado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7797,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:20:59.472Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJueEJJQmNMZmtEYXRkblh1Il0sInByb2R1Y3RzIjpbIllESlFpUzNVa3FRRUtNeEwiXSwiZmFpbHVyZXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "000c94276132c4f97581-51c837a2e845273bd477",
+          "file": "products.spec.ts",
+          "line": 22,
+          "column": 5
+        },
+        {
+          "title": "PRD-04 limite: estoque zero é aceito",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7734,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:21:07.283Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJaaUVQOU4zbmYxZHlvSHFzIl0sInByb2R1Y3RzIjpbInpoOXdGNXlhSFRsMmJEM00iXSwiZmFpbHVyZXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "000c94276132c4f97581-cfcb8a41cab02a296dbb",
+          "file": "products.spec.ts",
+          "line": 28,
+          "column": 5
+        },
+        {
+          "title": "PRD-05 limite: estoque negativo é rejeitado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6978,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:21:15.032Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJrd3FpV0dUVmRSZmVzNU5CIl0sInByb2R1Y3RzIjpbXSwiZmFpbHVyZXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "000c94276132c4f97581-de69104d4a2488856232",
+          "file": "products.spec.ts",
+          "line": 33,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "users.spec.ts",
+      "file": "users.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "USR-01 positivo: criar, filtrar, consultar e atualizar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8133,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:21:22.026Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJhdHZ4OXIwRUZZYzlYam9MIl0sInByb2R1Y3RzIjpbXSwiZmFpbHVyZXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7d08affc2ce055c80dfd-22927828698d8823a95b",
+          "file": "users.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "USR-02 negativo: email duplicado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7473,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:21:30.172Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJTZDBmdlc5QmFVeHFrdXdhIl0sInByb2R1Y3RzIjpbXSwiZmFpbHVyZXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7d08affc2ce055c80dfd-2bb078b627f0eb4f6def",
+          "file": "users.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "USR-03 negativo: email malformado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5640,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:21:37.661Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7d08affc2ce055c80dfd-e51297bc1b3363cae6ec",
+          "file": "users.spec.ts",
+          "line": 22,
+          "column": 5
+        },
+        {
+          "title": "USR-04 limite: nome vazio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5510,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:21:43.322Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7d08affc2ce055c80dfd-0706518f656db73464e9",
+          "file": "users.spec.ts",
+          "line": 26,
+          "column": 5
+        },
+        {
+          "title": "USR-05 positivo: excluir usuário e confirmar ausência",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6787,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T17:21:48.843Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "limpeza",
+                      "contentType": "application/json",
+                      "body": "eyJ1c2VycyI6WyJDZDVGWUVDM0tuWVZFOTVoIl0sInByb2R1Y3RzIjpbXSwiZmFpbHVyZXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7d08affc2ce055c80dfd-0dd4e40d27b0d28365fc",
+          "file": "users.spec.ts",
+          "line": 30,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-14T17:18:59.173Z",
+    "duration": 176529.973,
+    "expected": 21,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
